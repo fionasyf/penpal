@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penpal — Support</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                   "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+      color: #1c1c1e;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e5e7; background: #1c1c1e; }
+      a { color: #6ca0ff; }
+      h2 { border-color: #3a3a3c; }
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 24px;
+      font-size: 0.9rem;
+    }
+    .lang-switch a {
+      margin-left: 12px;
+      color: #0066cc;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .lang-switch a.active { font-weight: 600; text-decoration: underline; }
+    @media (prefers-color-scheme: dark) {
+      .lang-switch a { color: #6ca0ff; }
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 8px; }
+    .tagline { color: #6e6e73; font-size: 0.95rem; margin-bottom: 32px; }
+    h2 {
+      font-size: 1.15rem;
+      margin-top: 2.2em;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e5e5ea;
+    }
+    p { margin: 0.8em 0; }
+    ul { padding-left: 1.2em; }
+    li { margin: 0.4em 0; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+      background: #f5f5f7;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 24px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .contact-box { background: #2c2c2e; }
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5ea;
+      font-size: 0.85rem;
+      color: #8e8e93;
+    }
+    @media (prefers-color-scheme: dark) {
+      .footer { border-color: #3a3a3c; }
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <a onclick="showLang('zh')" class="active" id="btn-zh">简体中文</a>
+    <a onclick="showLang('zh-hant')" id="btn-zh-hant">繁體中文</a>
+    <a onclick="showLang('en')" id="btn-en">English</a>
+  </div>
+
+  <!-- 简体中文 -->
+  <div id="lang-zh">
+    <h1>Penpal — 技术支持</h1>
+    <p class="tagline">一边打字，一边把外语说地道</p>
+
+    <h2>关于 Penpal</h2>
+    <p>Penpal 是专为中文用户打造的智能语言输入键盘。支持英语、日语、韩语、粤语、法语、德语、西班牙语等多种语言，在你打字的同时帮你写出更自然、更地道的外语表达。</p>
+
+    <h2>常见问题</h2>
+    <p><strong>Penpal 需要注册或登录吗？</strong></p>
+    <p>不需要。Penpal 不收集你的身份信息，下载后即可使用。</p>
+
+    <p><strong>为什么需要「完全访问」权限？</strong></p>
+    <p>Penpal 是键盘扩展，需要网络访问才能将文本发送至云端 AI 进行语法检查和语音转文字。所有数据仅用于实时处理，处理完成后不会保留。</p>
+
+    <p><strong>支持哪些语言？</strong></p>
+    <p>目前支持英语、日语、韩语、粤语、法语、德语、西班牙语。中文作为输入源语言，可随时切换目标语言。</p>
+
+    <p><strong>语音输入无法识别？</strong></p>
+    <p>请检查系统设置中是否已授予 Penpal 麦克风权限。首次使用时需要在键盘工具栏中点击麦克风图标并允许授权。</p>
+
+    <p><strong>Penpal 安全吗？</strong></p>
+    <p>Penpal 不存储可识别你个人身份的信息。详细数据处理方式请参阅<a href="privacy-policy.html">隐私政策</a>。</p>
+
+    <h2>反馈与联系</h2>
+    <div class="contact-box">
+      <p>如有问题、建议或 Bug 反馈，欢迎通过以下方式联系我们：</p>
+      <p>📧 邮箱：<a href="mailto:feiandpensieve@gmail.com">feiandpensieve@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Yingfei Sun · <a href="privacy-policy.html">隐私政策</a></p>
+    </div>
+  </div>
+
+  <!-- 繁體中文 -->
+  <div id="lang-zh-hant" class="hidden">
+    <h1>Penpal — 技術支援</h1>
+    <p class="tagline">一邊打字，一邊把外語說地道</p>
+
+    <h2>關於 Penpal</h2>
+    <p>Penpal 是專為中文使用者打造的智能語言輸入鍵盤。支援英語、日語、韓語、粵語、法語、德語、西班牙語等多種語言，在你打字的同時幫你寫出更自然、更地道的外語表達。</p>
+
+    <h2>常見問題</h2>
+    <p><strong>Penpal 需要註冊或登入嗎？</strong></p>
+    <p>不需要。Penpal 不收集你的身份信息，下載後即可使用。</p>
+
+    <p><strong>為什麼需要「完全存取」權限？</strong></p>
+    <p>Penpal 是鍵盤擴充功能，需要網路存取才能將文字傳送至雲端 AI 進行語法檢查和語音轉文字。所有資料僅用於即時處理，處理完成後不會保留。</p>
+
+    <p><strong>支援哪些語言？</strong></p>
+    <p>目前支援英語、日語、韓語、粵語、法語、德語、西班牙語。中文作為輸入源語言，可隨時切換目標語言。</p>
+
+    <p><strong>語音輸入無法辨識？</strong></p>
+    <p>請檢查系統設定中是否已授予 Penpal 麥克風權限。首次使用時需要在鍵盤工具列中點擊麥克風圖示並允許授權。</p>
+
+    <p><strong>Penpal 安全嗎？</strong></p>
+    <p>Penpal 不會儲存可識別你個人身份的信息。詳細資料處理方式請參閱<a href="privacy-policy.html">隱私政策</a>。</p>
+
+    <h2>回饋與聯繫</h2>
+    <div class="contact-box">
+      <p>如有問題、建議或 Bug 回饋，歡迎透過以下方式聯繫我們：</p>
+      <p>📧 電子郵件：<a href="mailto:feiandpensieve@gmail.com">feiandpensieve@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Yingfei Sun · <a href="privacy-policy.html">隱私政策</a></p>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div id="lang-en" class="hidden">
+    <h1>Penpal — Support</h1>
+    <p class="tagline">Type smarter, speak naturally</p>
+
+    <h2>About Penpal</h2>
+    <p>Penpal is a smart language input keyboard built for Chinese speakers. It supports English, Japanese, Korean, Cantonese, French, German, Spanish, and more — helping you write more natural and idiomatic expressions as you type.</p>
+
+    <h2>FAQ</h2>
+    <p><strong>Do I need to sign up or log in?</strong></p>
+    <p>No. Penpal does not collect your identity information. Download and use it right away.</p>
+
+    <p><strong>Why does it require Full Access?</strong></p>
+    <p>Penpal is a keyboard extension. It needs network access to send text to cloud AI for grammar checking and speech-to-text. All data is processed in real time and is not retained afterwards.</p>
+
+    <p><strong>Which languages are supported?</strong></p>
+    <p>English, Japanese, Korean, Cantonese, French, German, and Spanish. Chinese is the input source language, and you can switch target languages at any time.</p>
+
+    <p><strong>Voice input isn't working?</strong></p>
+    <p>Please check system settings to ensure Penpal has microphone permission. On first use, tap the microphone icon in the keyboard toolbar and grant permission.</p>
+
+    <p><strong>Is Penpal safe?</strong></p>
+    <p>Penpal does not store any information that identifies you personally. For details on data handling, please see our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+
+    <h2>Feedback & Contact</h2>
+    <div class="contact-box">
+      <p>For questions, suggestions, or bug reports, contact us:</p>
+      <p>📧 Email: <a href="mailto:feiandpensieve@gmail.com">feiandpensieve@gmail.com</a></p>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Yingfei Sun · <a href="privacy-policy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('[id^="lang-"]').forEach(el => el.classList.add('hidden'));
+      document.getElementById('lang-' + lang).classList.remove('hidden');
+      document.querySelectorAll('.lang-switch a').forEach(el => el.classList.remove('active'));
+      document.getElementById('btn-' + lang).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
